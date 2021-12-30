@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    {% include "partials/head.html" %}
+    {% include 'includes/partials/head.html' %} {% include 'includes/partials/css.html' %} {% block stylesheets %}{% endblock stylesheets %}
+
 </head>
 
-<body>
-    <header>
-        {% include "partials/header.html" %} {% include "partials/nav.html" %}
-    </header>
-    <main>
-        {% block content %}{% endblock content %}
-    </main>
-    <footer>
-        {% include "partials/footer.html" %}
-    </footer>
+<body class="hold-transition {% block body_class %}{% endblock body_class %}">
+    <div class="wrapper">
+
+        {% include 'includes/partials/nav.html' %} {% include 'includes/partials/sidebar.html' %} {% block content %}{% endblock content %} {% include 'includes/partials/footer.html' %}
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- Specific Page JS goes HERE  -->
+    {% include 'includes/partials/js.html' %} {% block javascripts %}{% endblock javascripts %}
+
 </body>
 
 </html>
