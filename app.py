@@ -36,7 +36,7 @@ def create_app(test_config=None):
         app.register_blueprint(web.erb)
 
     db.init_app(app)
-    #csrf.init_app(app)
+    csrf.init_app(app)
     Migrate(app, db)
 
     # any other registrations; blueprints, template utilities, commands

@@ -1,7 +1,7 @@
 # IoT-Hotspot-Flask
 Project IoT-Hotspot Version Flask
 
-# Command recomended
+# Recommended commands
 python -m venv vendor
 pip install -r resources.txt
 flask db init --directory database/migrations

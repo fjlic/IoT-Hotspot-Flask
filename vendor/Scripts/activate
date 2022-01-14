@@ -38,7 +38,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\FJLIC\Desktop\mvc_flask\vendor"
+VIRTUAL_ENV="C:\xampp\htdocs\IoT-Hotspot-Flask\vendor"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
